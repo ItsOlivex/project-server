@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: -webkit-linear-gradient(top, #fff 0%, #f2f2f2 25%, rgba(#444, 0.3) 100%);
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+section video {
+    width: 1920px;
+    height: 1080px;
+    border: 1px solid black;
+
+}
+
+section .controls {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+section .controls .upControls{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section .controls .movementControls{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+}
+
+section .controls .movementControls .keyControls{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    min-width: 300px;
+}
+
+section .controls .movementControls .keyControls .up,
+section .controls .movementControls .keyControls .bottom{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    
+}
+
+section .controls .movementControls .keyControls .key{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    box-sizing: border-box;
+    line-height: 80px;
+    font-size: 22px;
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+    margin: 0 8px;
+    border-color: #f2f2f2;
+    border-style: solid;
+    text-shadow: 0 0.5px 1px #777, 0 2px 6px #f2f2f2;
+    border-width: 1px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(top, #f9f9f9 0%, #D2D2D2 80%, #c0c0c0 100%);
+    font-family: sans-serif;
+    display: inline-block;
+    transition: box-shadow 0.3s ease, transform 0.15s ease;
+    box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 6px 0 #C0C0C0, 0 8px 17px rgba(#444, 0.4), 2px 1px 4px rgba(#444, 0.25), -2px 1px 4px rgba(#444, 0.25), 0 9px 16px rgba(#444, 0.1);
+    transform: scale(0.9);
+    
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 4px 0 #C0C0C0, 0 2px 35px rgba(#444, 0.3), 2px 2px 4px rgba(#444, 0.25), -2px 2px 4px rgba(#444, 0.25), 0 7px 4px rgba(#444, 0.1);
+      transform: translateY(2px) scale(0.9);
+    }
+    
+    &:active {
+      box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 0 0 #C0C0C0, 0 0px 30px rgba(#444, 0.15), 2px 2px 4px rgba(#444, 0.25), -2px 2px 4px rgba(#444, 0.25), 0 0px 4px rgba(#444, 0.25);
+      transform: translateY(4px) scale(0.9); 
+    }
+}   
+
+section .controls .movementControls .keyControls .key.active {
+    box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 4px 0 #C0C0C0, 0 2px 35px rgba(#444, 0.3), 2px 2px 4px rgba(#444, 0.25), -2px 2px 4px rgba(#444, 0.25), 0 7px 4px rgba(#444, 0.1);
+    transform: translateY(2px) scale(0.9);
+}
+
+section .controls .movementControls .sideControls{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
